@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .main {
+            display: flex; 
+            flex-wrap: wrap; 
+            flex-direction: row; 
+            justify-content: space-around;
+            gap: 10px
+        }
+
+        .box {
+            width: 250px; 
+            height: 250px; 
+            border: 4px solid black;
+        }
+    </style>
+    <title>Playground Assignment</title>
+</head>
+<body>
+    <h1 style="text-align: center; margin: 50px;">Welcome!</h1>
+    <div class = main>
+        {% for i in range (0, num)%}
+        <div class = box style="background-color: {{color}};"></div>
+        {% endfor %}
+    </div>
+
+</body>
+</html>
